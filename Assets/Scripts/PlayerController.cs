@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement Settings")]
     [SerializeField] private float movementSpeed;
 
     private PlayerControls playerControls;
