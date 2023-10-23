@@ -523,10 +523,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 904835167}
     m_Modifications:
+    - target: {fileID: 2450142444995155046, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
       propertyPath: m_Name
       value: TestHouse (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140629734071140486, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8341638871563565260, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
@@ -1094,7 +1109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+vVGJtb7AEAANEDAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1U01z2jAQ/SuMzw1jg21ojyVMcijQwTlkkulhkRZbE1misgQEhv/elT/AmTQnWW/3vdW+XZ8DVoABZtGsgQtXBT8G0TD5NgiYVlY7s4Dj3BhtCB95FKXMxAnpGtZpB5BvsJH4iCIvbJvVgTMpys01tYRjJvXOc8dhc5/zHH+hym3hmTUo1BpzoVVbZUwYcmG1eRISWzAaTQm2LfD8CXm5Iq5Cz/NtWeOQEIMS96Dsg4FdkTmzBYYLzb1scK+X2q7xrxMGA58LFRlDgjMtpeBovM4WZIX94AKr4kOFLvCExoBQ/4sY7DNYK7/u4vdoQUjfRWNU9Ubf50GwB+n8S++iwcX3C/miib3+8demXgbl7mqV989oC5YsbTSOfiCEvrfnyZ+13FYbhvyndopXM1Qk95kxHsaTNJwkXxLbui0tSjriZBjGk2n8PU1bKoVqclXog7dw5awUCm+u+MCSJjPTSiHzDfTt72jtCG80hWCwshkdrFgp+f780qOh8ou5hH1J3JmzVqj8xs2d4B+dDkajcTqON+F0i+EUgd+xOORJxOOUJ/F0xKOg7kIoYQXI36QvbWctLXtv+grKWnGNjOY8qBfQbxk3cHgQp1L3NkKorc4YbYlaNRrXtmk/QJLHfF7/FRnWLXhqcL4El39QSwMEFAAACAgAAJif6yC1XLRvAAAAegAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSM7TQUVBKL0osyCgGihiCOKWZKSB2tJKRkbGZsUmSgUVaqoFFamKKbrKJQYqpYYqJWYqpiYVRiqFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66XlBqcmJxiTvIcKXYWgBQSwECLQAUAAAICAAAmJ/r1RibW+wBAADRAwAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/rILVctG8AAAB6AAAACQAkAAAAAAAAAAAAAAA5AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAPMCAAAAAA==
+    dataString: UEsDBBQAAAgIAACYn+uey1imkwIAAJsFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGFVG1v2jAQ/ivIn7cJGKVi37ZA6Sa1RWVTPyz9cHUuxMKxI78UaMV/79lJSEonTUJyeO65l+fu7FcmlK2QO22WRmQ3OkP2bcDCN/s06IzXuIeNVmvxgi3nQWSuCCSInHtwQhM+Cm5Wl+iM4N/VRgbykECvRK5Nucg2mGjrLME5SItkMtoFb0XQ64DtG4dDc76Ec3CkL47KofkfyysuoawwC9V25NFFS6evSFSkpOGEqrmWUtimDOYOVZSZQGU9iSBCJoBkxQICv0CxKRz9Gfed7/LcomuKMnCYC0PdqaOyH7puWQl2W1f2DNKHPNNJLKmOefPR/DWac6PL6zbtaBhSuELw7T0cOFjXa2kfnr+v26sdyC08SXwoUN3qpdFeZWR0xgdXb3E874U6SUsK5NuOV9fagi3bVx/nM+rmc4zq94kU5VNAvkxqYC117Pcs+KChyfykiuNW2CYSoaGKPxZ/w6a/Po3hShjryNQkVKG8J+1NoLJFbFpQ412ijcIIN0oqVCDdYUVh3PkIz2y9tGeWKwgXpUne2Nr9P3OJcMcfDs9MK73rpmXxly+rlRbKrREML3rxbKF3N2iLO++kUNgpCoZbamKilarXz/7Dbe1NDrzn5nDvvME5OIiXgGqiNcn6rtTQ6KG8lGEjo4oQ/C+pCL/H0OQCKK+MMLvVKl6fd+djWISNF9n7PWdTyGeXF5ezIfLx5GKCn2EyHvPpeDYeZfmUw4jFiyAU9Rzkqm5aMyraINVpUbT07Vs2WBqo4s3LDOyW4qXUvfELles1N4jqro5wEouGktALkS0yQTLX6JxQcffYa8qk5lvM0lOgNDZ2sXcG0i5KyirxrF1AUpbEFyxlAT7dq5XBZ4G7kLwNdmTHN1BLAwQUAAAICAAAmJ/rdVSuy20AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IztNBRUEovSizIKAaKGII4pZkpIHa0kllimqW5qbmlQWqykYmpSapuoomRUbKZkaWRYUqaWXKioVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAmJ/rnstYppMCAACbBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/rdVSuy20AAAB4AAAACQAkAAAAAAAAAAAAAADgAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAJgDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -1584,6 +1599,7 @@ GameObject:
   - component: {fileID: 1057252083}
   - component: {fileID: 1057252082}
   - component: {fileID: 1057252081}
+  - component: {fileID: 1057252086}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1713,6 +1729,21 @@ Transform:
   - {fileID: 1190485129}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057252086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057252080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f586f285b3847808d79083bd19ef1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  unwrap: 1
+  splitAtEveryPortal: 0
 --- !u!1001 &1132205463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1721,10 +1752,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 904835167}
     m_Modifications:
+    - target: {fileID: 2450142444995155046, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
       propertyPath: m_Name
       value: TestHouse (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140629734071140486, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8341638871563565260, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
@@ -2159,10 +2205,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 904835167}
     m_Modifications:
+    - target: {fileID: 2450142444995155046, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
       propertyPath: m_Name
       value: TestHouse (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140629734071140486, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8341638871563565260, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
@@ -2333,10 +2394,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 904835167}
     m_Modifications:
+    - target: {fileID: 2450142444995155046, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
       propertyPath: m_Name
       value: TestHouse (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140629734071140486, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8341638871563565260, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
@@ -2407,10 +2483,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 904835167}
     m_Modifications:
+    - target: {fileID: 2450142444995155046, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
       propertyPath: m_Name
       value: TestHouse (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140629734071140486, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8341638871563565260, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
@@ -2687,10 +2778,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 904835167}
     m_Modifications:
+    - target: {fileID: 2450142444995155046, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
       propertyPath: m_Name
       value: TestHouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898569661618017705, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140629734071140486, guid: acd03999e21eb994c82c7e67d5f8af51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8341638871563565260, guid: acd03999e21eb994c82c7e67d5f8af51,
         type: 3}
