@@ -6,7 +6,7 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
-    public Image chatBubble;
+    public GameObject chatBubble;
     public TextMeshProUGUI chat;
     public string defaultText;
     public int maxCharacters;
@@ -28,17 +28,31 @@ public class Dialogue : MonoBehaviour
         Debug.Log($"DIALOGUE: interacted = {interacted}");
         if (interacted)
         {
-            chat.fontSize = dialogueSize;
-            int accumulatedCharacters = 0;
-
-            for (int i = currentWordIndex; i < wordsInText.Length; ++i)
+            if (currentWordIndex == wordsInText.Length - 1)
             {
-                string word = wordsInText[i];
-                accumulatedCharacters += word.Length;
-                if (accumulatedCharacters > maxCharacters)
+                EndDialogue();
+            }
+            else
+            {
+                chat.fontSize = dialogueSize;
+                int accumulatedCharacters = 0;
+
+                for (int i = currentWordIndex; i < wordsInText.Length; ++i)
                 {
-                    chat.text = string.Join(" ", wordsInText[currentWordIndex..i]);
-                    currentWordIndex = i;
+                    string word = wordsInText[i];
+                    accumulatedCharacters += word.Length;
+                    if (accumulatedCharacters > maxCharacters)
+                    {
+                        chat.text = string.Join(" ", wordsInText[currentWordIndex..i]);
+                        currentWordIndex = i;
+                        break;
+                    }
+
+                    if (i == wordsInText.Length - 1)
+                    {
+                        chat.text = string.Join(" ", wordsInText[currentWordIndex..]);
+                        currentWordIndex = i;
+                    }
                 }
             }
         }
@@ -48,5 +62,10 @@ public class Dialogue : MonoBehaviour
     {
         wordsInText = dialogue.Split();
         currentWordIndex = 0;
+    }
+
+    private void EndDialogue()
+    {
+        chatBubble.SetActive(false);
     }
 }
