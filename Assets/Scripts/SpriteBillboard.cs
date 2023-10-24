@@ -10,10 +10,6 @@ public class SpriteBillboard : MonoBehaviour
     private void Start()
     {
         cameraTransform = Camera.main.transform;
-    }
-
-    private void Update()
-    {
         RotateObject();
     }
 
@@ -22,6 +18,7 @@ public class SpriteBillboard : MonoBehaviour
     /// </summary>
     private void RotateObject()
     {
-        transform.LookAt(cameraTransform);
+        float cameraFacingAngle = 180f - Vector3.Angle(cameraTransform.position + Vector3.up, cameraTransform.forward);
+        transform.eulerAngles = new Vector3(cameraFacingAngle, transform.eulerAngles.y, transform.eulerAngles.z);
     }
 }
