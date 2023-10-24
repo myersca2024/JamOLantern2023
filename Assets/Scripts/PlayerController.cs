@@ -12,15 +12,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerHeight;
     [SerializeField] private float collisionDistance;
 
-    private PlayerControls playerControls;
-
-    private void Awake()
-    {
-        playerControls = new PlayerControls();
-
-        playerControls.Player.Enable();
-    }
-
     private void Update()
     {
         MovePlayer();
@@ -32,7 +23,7 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     private void MovePlayer()
     {
-        Vector2 inputVector = playerControls.Player.Movement.ReadValue<Vector2>();
+        Vector2 inputVector = PlayerInput.instance.GetPlayerMovementInput();
         Vector3 movementVector = new Vector3(inputVector.x, 0f, inputVector.y);
         if (!AttemptApplyMovement(movementVector))
         {
