@@ -43,7 +43,7 @@ public class InteractableObjectManager : MonoBehaviour
         if (activeObject == null || (activeObject != io && CheckClosestInteractable(io)))
         {
             activeObject = io;
-            interactablePopup.SetActive(true);
+            // interactablePopup.SetActive(true);
         }
     }
 
@@ -51,13 +51,25 @@ public class InteractableObjectManager : MonoBehaviour
     /// Request to close the current InteractableObject popup. Only works if
     /// the requesting popup is 
     /// </summary>
-    /// <param name="io"></param>
+    /// <param name="io">The InteractableObject making the request.</param>
     public void RequestClosePopup(InteractableObject io)
     {
         if (activeObject && activeObject == io)
         {
             activeObject = null;
-            interactablePopup.SetActive(io);
+            // interactablePopup.SetActive(io);
+        }
+    }
+
+    /// <summary>
+    /// Request made by the given InteractableObject to execute its given task.
+    /// </summary>
+    /// <param name="io">The InteractableObject making the request.</param>
+    public void RequestExecute(InteractableObject io)
+    {
+        if (activeObject && activeObject == io)
+        {
+            io.Execute();
         }
     }
 

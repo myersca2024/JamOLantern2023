@@ -6,12 +6,14 @@ using UnityEngine;
 /// </summary>
 public class PlayerInput : MonoBehaviour
 {
+    // Singleton instance
     public static PlayerInput instance;
 
     private PlayerControls playerControls;
 
     private void Awake()
     {
+        instance = this;
         playerControls = new PlayerControls();
 
         playerControls.Player.Enable();
@@ -32,6 +34,6 @@ public class PlayerInput : MonoBehaviour
     /// <returns>The status of the interact button being pressed.</returns>
     public bool GetInteractPressed()
     {
-        return playerControls.Player.Interact.WasPerformedThisFrame();
+        return playerControls.Player.Interact.WasPressedThisFrame();
     }
 }

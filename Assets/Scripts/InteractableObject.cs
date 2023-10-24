@@ -5,6 +5,7 @@ using UnityEngine;
 /// </summary>
 public abstract class InteractableObject : MonoBehaviour
 {
+    [Header("Interactable Object Settings")]
     [SerializeField] private Transform target;
     [SerializeField] private float interactRadius;
     [SerializeField] private string interactText;
@@ -22,6 +23,8 @@ public abstract class InteractableObject : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("test 1");
+
         if (Vector3.Distance(transform.position, target.position) <= interactRadius)
         {
             InteractableObjectManager.instance.RequestOpenPopup(this);
@@ -29,7 +32,7 @@ public abstract class InteractableObject : MonoBehaviour
 
             if (PlayerInput.instance.GetInteractPressed())
             {
-                // When player interacts with object
+                InteractableObjectManager.instance.RequestExecute(this);
             }
         }
         else if (targetEnteredRadius)
@@ -43,7 +46,7 @@ public abstract class InteractableObject : MonoBehaviour
     /// Executes the specified behavior of the InteractableObject that implements
     /// this class.
     /// </summary>
-    protected virtual void Execute() { }
+    public virtual void Execute() { }
 
     public float GetInteractionRadius()
     {
