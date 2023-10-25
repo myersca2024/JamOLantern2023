@@ -1202,7 +1202,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382501068}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c410bee40740da8429da83807c5e1380, type: 3}
   m_Name: 
@@ -1535,6 +1535,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ChatBubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 7336034498012915325, guid: 6e394c0bd54d1f848bb5dc3f636314cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
