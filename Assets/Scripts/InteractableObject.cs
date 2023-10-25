@@ -23,8 +23,6 @@ public abstract class InteractableObject : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("test 1");
-
         if (Vector3.Distance(transform.position, target.position) <= interactRadius)
         {
             InteractableObjectManager.instance.RequestOpenPopup(this);
