@@ -1181,6 +1181,8 @@ GameObject:
   - component: {fileID: 382501069}
   - component: {fileID: 382501071}
   - component: {fileID: 382501073}
+  - component: {fileID: 382501075}
+  - component: {fileID: 382501074}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1260,6 +1262,30 @@ MonoBehaviour:
   defaultText: "\xB7 \xB7 \xB7"
   maxCharacters: 10
   dialogueSize: 26
+--- !u!114 &382501074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382501068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9cf0580c7ed3bd4fa3db6af68eb9eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &382501075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382501068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98af6a39b8cee634f9fc11240fae568a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &394570439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8341638871563565260, guid: acd03999e21eb994c82c7e67d5f8af51,
