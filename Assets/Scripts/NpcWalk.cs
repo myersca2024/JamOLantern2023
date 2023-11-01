@@ -10,9 +10,11 @@ using UnityEngine;
 public class NpcWalk : MonoBehaviour
 {
     public GameObject[] waypoints;
-    float SPEED = 2.0f;
+    [SerializeField]float SPEED = 2.0f;
     bool isSad;
     bool isWalking;
+    [SerializeField]float WaitingTime = 2;
+    float timer;
     
     int target;
     // Start is called before the first frame update
@@ -30,15 +32,25 @@ public class NpcWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float step = SPEED * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position,waypoints[target].transform.position,step);
-        float dist = Vector3.Distance(transform.position,waypoints[target].transform.position);
-        if (waypoints[target].CompareTag("door") && dist <= 0.001f){
-            isWalking = false;
-        }
-        else if (dist <= 1){
-            
-            GetNextTarget();
+        if(isWalking){
+            float step = SPEED * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position,waypoints[target].transform.position,step);
+            float dist = Vector3.Distance(transform.position,waypoints[target].transform.position);
+            if (waypoints[target].CompareTag("door") && dist <= 0.001f){
+                isWalking = false;
+                timer = 0.0f;
+            }
+            else if (dist <= 0.001f){
+                
+                GetNextTarget();
+            }
+        } else {
+            if(timer >= WaitingTime){
+                isWalking = true;
+                GetNextTarget();
+            } else {
+                timer+=Time.deltaTime;
+            }
         }
     }
 
