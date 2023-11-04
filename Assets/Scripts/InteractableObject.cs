@@ -23,6 +23,7 @@ public abstract class InteractableObject : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log($"DISTANCE: {Vector3.Distance(transform.position, target.position)}");
         if (Vector3.Distance(transform.position, target.position) <= interactRadius)
         {
             InteractableObjectManager.instance.RequestOpenPopup(this);
@@ -30,6 +31,7 @@ public abstract class InteractableObject : MonoBehaviour
 
             if (PlayerInput.instance.GetInteractPressed())
             {
+                Debug.Log("SOMETHING IS INTERACTING");
                 InteractableObjectManager.instance.RequestExecute(this);
             }
         }

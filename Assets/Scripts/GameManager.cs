@@ -9,13 +9,13 @@ using System;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    private Dictionary<string, List<Guid>> housesVisitedInCostume;
-    private string currentCostume;
+    private Dictionary<Costume, List<Guid>> housesVisitedInCostume;
+    private Costume currentCostume;
 
     // Start is called before the first frame update
     void Start()
     {
-        housesVisitedInCostume = new Dictionary<string, List<Guid>>();
+        housesVisitedInCostume = new Dictionary<Costume, List<Guid>>();
     }
 
     // Update is called once per frame
@@ -41,8 +41,10 @@ public class GameManager : MonoBehaviour
         return !(housesVisitedInCostume.ContainsKey(currentCostume) && housesVisitedInCostume[currentCostume].Contains(houseId));
     }
 
-    public void CostumeTaken(GameObject npc)
+    public void CostumeTaken(GameObject npc, Costume costumeTaken)
     {
         // put logic for making the npc sad because its costume got stolen
+        currentCostume = costumeTaken;
+        npc.GetComponentInChildren<NPCWalkAnimationController>().SetSadWalk(true);
     }
 }

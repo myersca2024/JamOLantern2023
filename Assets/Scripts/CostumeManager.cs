@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class CostumeManager : MonoBehaviour
 {
+    private Animator costumeAnimator;
+
+    private void Awake()
+    {
+        costumeAnimator = GetComponent<Animator>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +23,9 @@ public class CostumeManager : MonoBehaviour
         
     }
 
-    public void StealCostume(string newCostume)
+    public void StealCostume(Costume newCostume)
     {
         Debug.Log($"{newCostume} was stolen!");
-        // logic to change sprite of player character based on stolen costume
+        costumeAnimator.SetInteger("CostumeIndex", (int)newCostume);
     }
 }
