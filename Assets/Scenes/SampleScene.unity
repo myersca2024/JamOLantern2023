@@ -258,6 +258,54 @@ MonoBehaviour:
   target: {fileID: 0}
   interactRadius: 5
   interactText: 
+--- !u!1 &20645398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 20645400}
+  - component: {fileID: 20645399}
+  m_Layer: 0
+  m_Name: InteractableObject3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &20645399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20645398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53aa9377b91d1d46a3dcacd0a73a97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  interactRadius: 5
+  interactText: 
+  candyToGive: 1
+--- !u!4 &20645400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20645398}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.73, y: 0, z: -25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &34465287
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,6 +3706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1158803145}
+  - component: {fileID: 1158803146}
   m_Layer: 0
   m_Name: InteractableObject
   m_TagString: Untagged
@@ -3680,6 +3729,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1158803146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158803144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53aa9377b91d1d46a3dcacd0a73a97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  interactRadius: 5
+  interactText: 
+  candyToGive: 1
 --- !u!1 &1190485128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4018,6 +4083,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229233344}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1234715156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1234715158}
+  - component: {fileID: 1234715157}
+  m_Layer: 0
+  m_Name: InteractableObject2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1234715157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234715156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53aa9377b91d1d46a3dcacd0a73a97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  interactRadius: 5
+  interactText: 
+  candyToGive: 1
+--- !u!4 &1234715158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234715156}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.67, y: 0, z: -25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1268596823
 GameObject:
   m_ObjectHideFlags: 0
@@ -5103,6 +5216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9cf0580c7ed3bd4fa3db6af68eb9eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkAnimator: {fileID: 153179731}
 --- !u!95 &1738471213
 Animator:
   serializedVersion: 5
@@ -6338,6 +6452,8 @@ SceneRoots:
   - {fileID: 1057252085}
   - {fileID: 168690824}
   - {fileID: 1158803145}
+  - {fileID: 1234715158}
+  - {fileID: 20645400}
   - {fileID: 1730252507}
   - {fileID: 994559458}
   - {fileID: 2020994453}

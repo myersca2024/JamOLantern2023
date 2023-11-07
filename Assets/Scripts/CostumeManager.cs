@@ -5,6 +5,7 @@ using UnityEngine;
 public class CostumeManager : MonoBehaviour
 {
     private Animator costumeAnimator;
+    [SerializeField] private Animator walkAnimator;
 
     private void Awake()
     {
@@ -27,5 +28,6 @@ public class CostumeManager : MonoBehaviour
     {
         Debug.Log($"{newCostume} was stolen!");
         costumeAnimator.SetInteger("CostumeIndex", (int)newCostume);
+        walkAnimator.SetTrigger("NewCostume");
     }
 }

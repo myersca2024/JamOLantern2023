@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         housesVisitedInCostume = new Dictionary<Costume, List<Guid>>();
+        currentCostume = Costume.NoCostume;
     }
 
     // Update is called once per frame
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     public bool CanTakeCandy(Guid houseId)
     {
-        return !(housesVisitedInCostume.ContainsKey(currentCostume) && housesVisitedInCostume[currentCostume].Contains(houseId));
+        return !(housesVisitedInCostume.ContainsKey(currentCostume) && housesVisitedInCostume[currentCostume].Contains(houseId)) && currentCostume != Costume.NoCostume;
     }
 
     public void CostumeTaken(GameObject npc, Costume costumeTaken)
